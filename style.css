@@ -1,0 +1,35 @@
+.calculadora {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.btn {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+}
